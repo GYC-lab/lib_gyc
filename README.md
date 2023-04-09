@@ -29,7 +29,6 @@ $!FrameControl ActivateByNumber
 The styles of the plot are defined with keys like `Name`, `NumControlPoints`, `LeadRGB` and so on. 
 Hence, this approach is applied to my user-defined functions
 `gplot()` and `gcontour()` with `gcontourline()`, which are used to plot curves and contours respectively. 
-Additionally, the plot settings are inspired by the previous group report of *T. Wang*.
 
 ### Features 
 
@@ -114,48 +113,48 @@ Further details are available in the .ipynb file.
 
 ##### for gcontour()
 
-- settings for contourf 
-    - pcolor_contourf: plot pcolormesh(default) or contourf(use 1 to activate)
-    - levels: levels of the contourf
+- settings for contourf
+    - `pcolor_contourf`: plot pcolormesh (default) or contourf (use 1 to activate)
+    - `levels`: levels of the contourf
 - settings for axis
-    - xmin, xmax, ymin, ymax: range of x and y
-    - equal_aspect: equal aspect or not
+    - `xmin`, `xmax`, `ymin`, `ymax`: range of x and y
+    - `equal_aspect`: equal aspect or not
 - settings for color
-    - vmin: minimum value mapped to color
-    - vmax: maximum value mapped to color
-    - cmap: colormap
-    - alpha: alpha of the contour
-    - shading: shading of the contour
-    - antialiasing: anti-aliasing or not
+    - `vmin`: minimum value mapped to color
+    - `vmax`: maximum value mapped to color
+    - `cmap`: colormap
+    - `alpha`: alpha of the contour
+    - `shading`: shading of the contour
+    - `antialiasing`: anti-aliasing or not
 - settings for x label and y label
-    - xlabel: x label: set $x$ to show x in latex
-    - ylabel: y label: set $y$ to show y in latex
-    - xlabelpad: labelpad of x label
-    - ylabelpad: labelpad of y label
-    - xrotation: angle of x label
-    - yrotation: angle of y label
+    - `xlabel`: x label: set $x$ to show x in latex
+    - `ylabel`: y label: set $y$ to show y in latex
+    - `xlabelpad`: labelpad of x label
+    - `ylabelpad`: labelpad of y label
+    - `xrotation`: angle of x label
+    - `yrotation`: angle of y label
 - settings for title
-    - title: title of the contour
+    - `title`: title of the contour
 - settings for ticks    
-    - xtick_major: major x ticks
-    - xtick_minor: minor x ticks
-    - ytick_major: major y ticks
-    - ytick_minor: minor y ticks
+    - `xtick_major`: major x ticks
+    - `xtick_minor`: minor x ticks
+    - `ytick_major`: major y ticks
+    - `ytick_minor`: minor y ticks
 - settings for colorbar
-    - show_colorbar: show colorbar or not
-    - bar_num_ticks: number of ticks in the colorbar
-    - bar_label: label of the colorbar
-    - bar_tick_length: length of the ticks in the colorbar
-    - bar_tick_width: width of the ticks in the colorbar
-    - bar_orientation: orientation of the colorbar
-    - bar_shrink: shrink of the colorbar
-    - bar_position: position of the colorbar
-    - bar_labelpad: labelpad of the colorbar
+    - `show_colorbar`: show colorbar or not
+    - `bar_num_ticks`: number of ticks in the colorbar
+    - `bar_label`: label of the colorbar
+    - `bar_tick_length`: length of the ticks in the colorbar
+    - `bar_tick_width`: width of the ticks in the colorbar
+    - `bar_orientation`: orientation of the colorbar
+    - `bar_shrink`: shrink of the colorbar
+    - `bar_position`: position of the colorbar
+    - `bar_labelpad`: labelpad of the colorbar
 - settings for grid
-    - show_grid: show grid or not
-    - linecolor: color of the grid
-    - linewidth: width of the grid
-    - linestyle: style of the grid
+    - `show_grid`: show grid or not
+    - `linecolor`: color of the grid
+    - `linewidth`: width of the grid
+    - `linestyle`: style of the grid
 
 
 
