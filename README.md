@@ -27,11 +27,24 @@ $!FrameControl ActivateByNumber
   Frame = 1
 ```
 The styles of the plot are defined with keys like `Name`, `NumControlPoints`, `LeadRGB` and so on. 
-Hence, this approach is applied to my user-defined functions
+Hence, this approach is applied to the user-defined functions
 `gplot()` and `gcontour()` with `gcontourline()`, which are used to plot curves and contours respectively. 
 
 ### Features 
 
+- set the style by the values of keys in the dictionary `settings` instead of various figure handles. For example, you can set the range of x and y by changing the values of `xmin` and `xmax` in `settings` 
+```python
+settings['axis']["xmin"] = 0
+settings['axis']["xmin"] = 1
+```
+instead of using figure handles `plt.xlim()` or `ax.set_xlim()`
+```python
+plt.xlim([0,1])
+```
+or
+```python
+ax.set_xlim([0,1])
+```
 
 
 ## Getting Started
@@ -40,7 +53,7 @@ Hence, this approach is applied to my user-defined functions
 
 Python libraries [numpy](https://numpy.org/), [matplotlib](https://matplotlib.org/) 
 and [cmaps](https://github.com/hhuangwx/cmaps) are required to run the code. You can install them by running the following commands in your terminal (if installed, just skip).
-FYI, the colormaps in `cmaps` are from [NCL](https://www.ncl.ucar.edu/Document/Graphics/color_table_gallery.shtml) website.
+<!-- FYI, the colormaps in `cmaps` are from [NCL](https://www.ncl.ucar.edu/Document/Graphics/color_table_gallery.shtml) website. -->
 ```
 pip install matplotlib
 pip install numpy
@@ -49,8 +62,7 @@ pip install cmaps
 
 ### Usage
 
-The default style have been defined, which is elaborately designed for scientific visualization. And many other styles are also defined with 
-`gplot_style_k()`, `gplot_style_r()` and so on.
+The default style have been defined, which is elaborately designed for scientific visualization. 
 
 add `lib_plot.py` to your working directory, and import it by
 ```python
